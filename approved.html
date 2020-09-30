@@ -1,1 +1,54 @@
-Transaction Approved
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Approved</title>
+</head>
+<body style="background-color: #FFF; font-family: Arial;">
+
+<table border=0 height=100% width=100%><tr><td valign=center align=center>
+
+    <h2>Transaction Approved</h2>
+
+    <br>
+	
+    <table border=0>
+        <tr>
+            <td><b>Transaction Id:</b></td>
+            <td><p id="trnOrderNumber"></p></td>
+        </tr><tr>
+            <td><b>Authorization Code:</b></td>
+            <td><p id="authCode"></p></td>
+        </tr><tr>
+            <td><b>Message Id:</b></td>
+            <td><p id="messageId"></p></td>
+        </tr><tr>
+            <td><b>Message Text:</b></td>
+            <td><p id="messageText"></p></td>
+        </tr><tr>
+            <td><b>Transaction Date:</b></td>
+            <td><p id="trnDate"></p></td>
+        </tr>
+    </table>
+
+    <br><br>
+
+</td></tr></table>
+
+<script>
+console.log(window.location.search);
+var urlParams = new URLSearchParams(window.location.search);
+var transId = urlParams.get('trnOrderNumber');
+var authCode = urlParams.get('authCode');
+var msgId = urlParams.get('messageId');
+var msgText = urlParams.get('messageText');
+var transDate = urlParams.get('trnDate');
+
+document.getElementById("trnOrderNumber").innerHTML = transId;
+document.getElementById("authCode").innerHTML = authCode;
+document.getElementById("messageId").innerHTML = msgId;
+document.getElementById("messageText").innerHTML = msgText;
+document.getElementById("trnDate").innerHTML = transDate;
+</script>
+
+</body>
+</html>
