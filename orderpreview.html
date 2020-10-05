@@ -1,0 +1,237 @@
+<!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <title>Sobeys B2C</title>
+
+	  <link rel="stylesheet" type="text/css" href="https://libs.na.bambora.com/checkouttheme/0.1.0/ui.bambora/ui.bambora.1.1.0.css">
+      <link rel="stylesheet" type="text/css" href="https://libs.na.bambora.com/checkouttheme/0.1.0/style.css">
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="card.js"></script>
+
+      <style type="text/css"> h4 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 20.5pt; }
+         .s1 { color: #00A16B; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+         .s2 { color: #FBFBFD; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 7.5pt; }
+         .s3 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 15pt; }
+         .s4 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+         .s5 { color: #E1D4C1; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 22.5pt; }
+         .s6 { color: #010101; font-family:"Courier New", monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
+         .s7 { color: #FBFBFD; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 10pt; }
+         .s8 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8pt; }
+         .s9 { color: #00A16B; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 16pt; }
+         .s11 { color: #7C7C7C; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8pt; }
+         .s12 { color: #7C7C7C; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8pt; }
+         .s13 { color: #D1D4D3; font-family:Arial, sans-serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 4pt; }
+         .s14 { color: #3B3A3A; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+         .s15 { color: #282828; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
+         .s16 { color: #D1D4D3; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; }
+         .s17 { color: #8060C8; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 7pt; }
+         .s18 { color: #010101; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8.5pt; }
+         .s19 { color: #3B3F83; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 4.5pt; }
+         .s20 { color: #08269C; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 4.5pt; }
+         .s21 { color: #08269C; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12.5pt; }
+         .s22 { color: #08269C; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12.5pt; }
+         .s23 { color: #7C7C7C; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12.5pt; }
+         .s24 { color: #FBFBFD; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8pt; }
+         .s25 { color: #7C7C7C; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5.5pt; }
+         .s26 { color: #7C7C7C; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; }
+         .s28 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 31.5pt; }
+         .s29 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 24.5pt; }
+         .s30 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 15.5pt; }
+         .s31 { color: #00A16B; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
+         .s32 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 17pt; }
+         .s33 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 16pt; }
+         .s34 { color: #4D4D4D; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 17pt; }
+         .a { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 15.5pt; }
+         .s36 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 15.5pt; }
+         .s37 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 16.5pt; }
+         p { color: #5E5E5E; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12pt; margin:0pt; }
+         .s39 { color: #FDFDFD; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
+         .s40 { color: #8062C8; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
+         .s41 { color: #858585; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12pt; }
+         .s42 { color: #858585; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11.5pt; }
+         .s43 { color: #ACACAC; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14.5pt; }
+         h2 { color: #030303; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 31.5pt; }
+         .h3 { color: #030303; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 30.5pt; }
+         .s44 { color: #030303; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16.5pt; }
+         .s45 { color: #030303; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 17pt; }
+         .s46 { color: #797979; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16.5pt; }
+         .s47 { color: #FDFDFD; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15pt; }
+         .s48 { color: #077CFD; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12.5pt; }
+         .s49 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 13.5pt; }
+         .s50 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
+         .s51 { color: #9C9C9C; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
+         .s52 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16pt; }
+         .s53 { color: #00A16B; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 26pt; }
+         .s54 { color: #505050; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12.5pt; }
+         .s55 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12.5pt; }
+         .s56 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 25.5pt; }
+         .s57 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14.5pt; }
+         .s58 { color: #FDFDFD; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11.5pt; }
+         .s59 { color: #FDFDFD; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11.5pt; }
+         .s60 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16.5pt; }
+         .s61 { color: #505050; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12.5pt; }
+         .s62 { color: #414141; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12.5pt; }
+         .s63 { color: #00A16B; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12.5pt; }
+         .s64 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12.5pt; }
+         .s65 { color: #505050; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9.5pt; }
+         .s67 { color: #505050; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
+         .s68 { color: #797979; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 6pt; }
+         .s69 { color: #505050; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9.5pt; }
+         .s70 { color: #077CFD; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 13pt; }
+         .s71 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+         .s72 { color: #9C9C9C; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+         .s73 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 17pt; }
+         .s74 { color: #00A16B; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 27pt; }
+         .s75 { color: #525252; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 13pt; }
+         .s76 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 20.5pt; }
+         .s77 { color: #525252; font-family:Arial, sans-serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 13.5pt; }
+         .s78 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 27.5pt; }
+         .s79 { color: #FDFDFD; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12.5pt; }
+         .s80 { color: #FDFDFD; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12.5pt; }
+         .s81 { color: #525252; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
+         .s82 { color: #525252; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+         .s83 { color: #797979; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 6.5pt; }
+         .s84 { color: #525252; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
+         .s85 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14.5pt; }
+         .s86 { color: #077CFD; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16pt; }
+         .s87 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 16pt; }
+         .s88 { color: #9C9C9C; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 13.5pt; }
+         .s89 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 13.5pt; }
+         .s90 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 20pt; }
+         h1 { color: #00A16B; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 34pt; }
+         .s91 { color: #525252; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16pt; }
+         .s93 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16pt; }
+         .s94 { color: #525252; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 15.5pt; }
+         .s95 { color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 20pt; }
+         .s96 { color: #525252; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16pt; }
+         .s97 { color: #414141; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16pt; }
+         .s98 { color: #00A16B; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 15.5pt; }
+         .s99 { color: #525252; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12.5pt; }
+         .s100 { color: #525252; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 13.5pt; }
+         .s101 { color: #525252; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+         .s102 { color: #6E6E6E; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12.5pt; }
+         .s103 { color: #6E6E6E; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8pt; }
+         .s104 { color: #525252; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12.5pt; }
+         li {display: block; }
+         #l1 {padding-left: 0pt;counter-reset: c1 0; }
+         #l1> li:before {counter-increment: c1; content: counter(c1, decimal)". "; color: #010101; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+         li {display: block; }
+         #l2 {padding-left: 0pt; }
+         #l2> li:before {content: "• "; color: #9C9C9C; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 13.5pt; vertical-align: -6pt; }
+         li {display: block; }
+         #l3 {padding-left: 0pt; }
+         #l3> li:before {content: "• "; color: #9C9C9C; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14.5pt; vertical-align: -6pt; }
+         li {display: block; }
+         #l4 {padding-left: 0pt; }
+         #l4> li:before {content: "• "; color: #9C9C9C; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16pt; vertical-align: -7pt; }
+         td>p {display: inline; }
+
+		 * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+      </style>
+   </head>
+   <body>
+
+      <p style="text-indent: 0pt;text-align: left;"><span><img width="1932" height="215" alt="image" src="Sobeys B2C/Image_025.jpg"/></span></p>
+      <p style="text-indent: 0pt;line-height: 5pt;text-align: left;"><br/></p>
+      <p style="padding-left: 688pt;text-indent: 0pt;text-align: left;"><span><img width="85" height="85" alt="image" src="Sobeys B2C/Image_026.jpg"/></span></p>
+      <p style="text-indent: 0pt;line-height: 7pt;text-align: left;"><br/></p>
+
+      <p class="s28" style="padding-left: 443pt;text-indent: 0pt;text-align: center;">Order Preview</p>
+      <p style="text-indent: 0pt;line-height: 9pt;text-align: left;"><br/></p>
+      <p style="padding-left: 300pt;text-indent: 0pt;text-align: left;"><span><img width="447" height="267" alt="image" src="Sobeys B2C/Image_020.jpg"/></span></p>
+      <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br/></p>
+
+      <table style="margin-left: 300pt;margin-right: auto;border-collapse:collapse" cellspacing="0" border="0">
+         <tr>
+            <td>
+               <p class="s29" style="padding-top: 2pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">Card Value</p>
+            </td>
+            <td>
+               <p class="s29" style="padding-top: 1pt;padding-left: 38pt;text-indent: 0pt;text-align: left;">$100.00</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p class="s30" style="padding-top: 7pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">Donation</p>
+            </td>
+            <td>
+               <p class="s31" style="padding-top: 5pt;padding-left: 72pt;text-indent: 0pt;text-align: left;">$20.00</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p class="s32" style="padding-top: 7pt;padding-left: 2pt;text-indent: 0pt;text-align: left;">Total</p>
+            </td>
+            <td>
+               <p class="s33" style="padding-top: 7pt;padding-left: 68pt;text-indent: 0pt;text-align: left;">$120.00</p>
+            </td>
+         </tr>
+
+		 <tr>
+            <td>
+               <p class="s32" style="padding-top: 7pt;padding-left: 2pt;text-indent: 0pt;text-align: left;">&nbsp;</p>
+            </td>
+            <td>
+               <p class="s33" style="padding-top: 7pt;padding-left: 68pt;text-indent: 0pt;text-align: left;">&nbsp;</p>
+            </td>
+         </tr>
+		 <tr>
+            <td>
+               <p class="s32" style="padding-top: 7pt;padding-left: 2pt;text-indent: 0pt;text-align: left;">Recipient</p>
+            </td>
+            <td>
+               <p class="s33" style="padding-top: 7pt;padding-left: 68pt;text-indent: 0pt;text-align: left;">George Michael Bluth</p>
+            </td>
+         </tr>
+		 <tr>
+            <td>
+               <p class="s32" style="padding-top: 7pt;padding-left: 2pt;text-indent: 0pt;text-align: left;">&nbsp;</p>
+            </td>
+            <td>
+               <p class="s33" style="padding-top: 7pt;padding-left: 68pt;text-indent: 0pt;text-align: left;">george.mb@gmail.com</p>
+            </td>
+         </tr>
+		 <tr>
+            <td>
+               <p class="s32" style="padding-top: 7pt;padding-left: 2pt;text-indent: 0pt;text-align: left;">Payment Method</p>
+            </td>
+            <td>
+               <p class="s33" style="padding-top: 7pt;padding-left: 68pt;text-indent: 0pt;text-align: left;">Credit Card</p>
+            </td>
+         </tr>
+
+      </table>
+
+      <p style="text-indent: 0pt;line-height: 17pt;text-align: left;"><br/></p>
+      <p style="padding-left: 300pt;text-indent: 0pt;text-align: left;">By continuing with this purchase you acknowledge that the e-Gift Card will be sent to the recipient(s) via email, and will not be retrieved or replaced if <span style=" color: #4D4D4D;">it </span>is used by an unintended recipient. Please remember that there is a possibility of emails being intercepted <span style=" color: #4D4D4D;">in transit.</span></p>
+      <p style="text-indent: 0pt;line-height: 14pt;text-align: left;"><br/></p>
+      <p style="padding-left: 300pt;text-indent: 0pt;text-align: left;">You agree that the individual whose contact information you had entered in the recipient information is aware of the purpose for which the information <span style=" color: #4D4D4D;">is </span>being collected, used and disclosed and you <span style=" color: #4D4D4D;">have </span>obtained their consent to such collection, use and disclosure.</p>
+      <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br/></p>
+
+<p style="padding-left: 300pt;text-indent: 0pt;text-align: left;">
+	  <a href="https://web.na.bambora.com/scripts/payment/payment.asp?merchant_id=300208814&trnAmount=10.00&hashValue=5fe49927dc1196d28e91f1dc29f9793f6ff399aa" 
+class="btn btn-small" target="_blank" style="word-spacing: .3em; letter-spacing: .05em; padding-left:40px; padding-right:40px;">Confirm & Pay</a>
+</p>
+
+	  <p class="s41" style="padding-left: 300pt;text-indent: 0pt;text-align: left;">eGift Card Terms <span class="s42">&amp; </span>Conditions    <span class="s43">I  </span>Terms of Purchase</p>
+ 
+   </body>
+</html>

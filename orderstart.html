@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+
+ <head>
+  <meta charset="UTF-8">
+  <title>Start Your Order</title>
+  <link rel="stylesheet" type="text/css" href="https://libs.na.bambora.com/checkouttheme/0.1.0/ui.bambora/ui.bambora.1.1.0.css">
+  <link rel="stylesheet" type="text/css" href="https://libs.na.bambora.com/checkouttheme/0.1.0/style.css">
+ </head>
+
+<style>
+.btn-group button {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  border-radius: 8px;
+  color: white; /* White text */
+  padding: 10px 30px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  margin-left: 10px !important;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+table, th, td {
+  border: none;
+  padding: 5px;
+  width: 50%;
+}
+table {
+  border-spacing: 15px;
+}
+
+</style>
+<body>
+
+<h1>Start Your Order</h1>
+
+<h3>1. Choose a theme</h3>
+
+<p style="text-indent: 0pt;text-align: left;">
+	<span><img width="64" height="42" alt="image" src="Sobeys B2C/Image_007.jpg"/></span>
+	<span><img width="72" height="51" alt="image" src="Sobeys B2C/Image_008.jpg"/></span>
+	<span><img width="43" height="15" alt="image" src="Sobeys B2C/Image_009.jpg"/></span>
+	<span><img width="66" height="42" alt="image" src="Sobeys B2C/Image_010.jpg"/></span>
+	<span><img width="66" height="42" alt="image" src="Sobeys B2C/Image_011.jpg"/></span>
+</p>
+
+<br/>
+
+<h3>2. Choose a Value</h3>
+
+<div class="btn-group">
+  <button>$10</button>
+  <button>$25</button>
+  <button>$50</button>
+  <button>$100</button>
+  <button>$250</button>
+</div>
+
+<br/>
+<p></p>
+
+<h3>3. Recipient</h3>
+
+<table>
+<tr>
+<td>
+    <input type="text" id="name" name="first_name" value="Recipient First Name">
+</td>
+<td>
+	<input type="text" id="name" name="last_name" value="Recipient Second Name">
+</td>
+</tr>
+<tr>
+<td colspan="2">
+    <textarea rows="3" id="msg" name="user_message" value="Message for Recipient">Message for Recipient</textarea>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+    <input type="email" id="mail" name="email" value="My Email">
+</td>
+</tr>
+</table>
+
+<br/>
+<p></p>
+
+<h3>4. Delivery</h3>
+
+<table>
+
+<tr>
+<td>
+    <input type="email" id="mail" name="email" value="Email Address">
+</td>
+</tr>
+</table>
+
+<br/>
+<p></p>
+
+<h3>5. Giving Value</h3>
+
+<div class="btn-group">
+  <button>$5</button>
+  <button>$10</button>
+  <button>$20</button>
+  <button>$25</button>
+</div>
+
+<br/>
+<p></p>
+
+<h3>6. Payment Method</h3>
+
+<p style="text-indent: 0pt;text-align: left;">
+	<span><img width="40" height="20" alt="image" src="Sobeys B2C/mastercard.svg"/></span>
+	<span><img width="40" height="20" alt="image" src="Sobeys B2C/visa.svg"/></span>
+</p>
+
+<a href="orderpreview.html" 
+class="btn btn-small" target="_blank" style="word-spacing: .3em; letter-spacing: .05em; padding-left:40px; padding-right:40px;">Review Order</a>
+
+<br/>
+<p></p>
+
+
+</body>
+</html>
